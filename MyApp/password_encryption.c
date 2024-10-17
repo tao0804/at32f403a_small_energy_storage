@@ -117,7 +117,8 @@ uint32_t mapBits(uint32_t input, uint8_t reverse)
 }
 
 // 加密函数
-uint32_t encryptData(uint32_t encryptionKey, uint32_t plaintext) {
+uint32_t encryptData(uint32_t encryptionKey, uint32_t plaintext)
+{
     uint8_t crcChecksum = crc8_calculate(&plaintext, 4);
     uint32_t combinedData = plaintext | (crcChecksum << 18);
     uint32_t ciphertext = combinedData ^ encryptionKey;
@@ -125,7 +126,8 @@ uint32_t encryptData(uint32_t encryptionKey, uint32_t plaintext) {
 }
 
 // 解密函数
-int32_t decryptData(uint32_t encryptionKey, uint32_t ciphertext) {
+int32_t decryptData(uint32_t encryptionKey, uint32_t ciphertext)
+{
     uint32_t combinedData = mapBits(ciphertext, 1) ^ encryptionKey;
     uint32_t plaintext = combinedData & 0x3FFFF;
     uint8_t crcChecksum = crc8_calculate(&plaintext, 4);
