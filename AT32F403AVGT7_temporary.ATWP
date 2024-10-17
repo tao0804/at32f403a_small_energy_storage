@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+    <MCUInfo>
+        <MCUSerials>AT32F403A</MCUSerials>
+        <MCUName>AT32F403AVGT7</MCUName>
+        <MCUPackage>LQFP100</MCUPackage>
+    </MCUInfo>
+    <DEBUG>
+        <Mode>
+            <ModeSub name="Debug interface" value="JTAG (5pin)"/>
+        </Mode>
+    </DEBUG>
+    <RTC>
+        <Mode>
+            <ModeSub name="RTC OUTPUT" value="RTC_OUTPUT_ALARM"/>
+            <ModeSub name="RTC_Enabled" value="TRUE"/>
+            <ModeSub name="RTC_Calendar" value="TRUE"/>
+            <ModeSub name="Alarm" value="TRUE"/>
+        </Mode>
+        <Parameters>
+            <ParametersSub name="Year" value="2024"/>
+            <ParametersSub name="Month" value="10"/>
+            <ParametersSub name="Year_A" value="2024"/>
+            <ParametersSub name="Month_A" value="10"/>
+            <ParametersSub name="Date_A" value="9"/>
+            <ParametersSub name="InterruptAlarm" value="ENABLE"/>
+        </Parameters>
+    </RTC>
+    <NVIC>
+        <SysTick_Handler>0;0;0</SysTick_Handler>
+        <TAMPER_IRQHandler>0;0;0</TAMPER_IRQHandler>
+        <RTC_IRQHandler>0;0;0</RTC_IRQHandler>
+        <FLASH_IRQHandler>0;0;0</FLASH_IRQHandler>
+        <CRM_IRQHandler>0;0;0</CRM_IRQHandler>
+        <RTCAlarm_IRQHandler>0;0;0</RTCAlarm_IRQHandler>
+    </NVIC>
+    <ClockConfiguration>
+        <rtcsel>0</rtcsel>
+        <hext>8.000000</hext>
+        <hextdiv>2</hextdiv>
+        <pllhextdiv>0</pllhextdiv>
+        <pllrcs>1</pllrcs>
+        <pllmult>60</pllmult>
+        <sclkselect>1</sclkselect>
+        <ahbdiv>1</ahbdiv>
+        <apb1div>2</apb1div>
+        <apb2div>2</apb2div>
+        <usbdiv>4.0</usbdiv>
+        <hicktousb>1</hicktousb>
+        <hicktosclk>0</hicktosclk>
+        <clkout>0</clkout>
+        <clkoutdiv>1</clkoutdiv>
+        <adcdiv>6</adcdiv>
+    </ClockConfiguration>
+    <PINInfo>
+        <PinSub pinname="PC13" signalname="RTC_TAMPER" signaltype="2"/>
+        <PinSub pinname="PA13" signalname="DEBUG_JTMS_SWDIO" signaltype="2"/>
+        <PinSub pinname="PA14" signalname="DEBUG_JTCK_SWCLK" signaltype="2"/>
+        <PinSub pinname="PA15" signalname="DEBUG_JTDI" signaltype="2"/>
+        <PinSub pinname="PB3" signalname="DEBUG_JTDO" signaltype="2"/>
+        <PinSub pinname="PB4" signalname="DEBUG_NJTRST" signaltype="2"/>
+    </PINInfo>
+    <ProjectInfomation>
+        <ProjectName>AT32F403AVGT7_temporary</ProjectName>
+        <ProjectLocation>D:/taozhi/zzzz</ProjectLocation>
+        <ToolchainIDE>MDK_V5</ToolchainIDE>
+        <KeepUserCode>true</KeepUserCode>
+        <MinHeapSize>0x200</MinHeapSize>
+        <MinStackSize>0x400</MinStackSize>
+        <UseFirmware>true</UseFirmware>
+        <PackageVersion>V2.1.9</PackageVersion>
+    </ProjectInfomation>
+</Root>
