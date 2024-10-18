@@ -1,0 +1,25 @@
+# Keil MDK 临时和配置文件
+*.uvguix.*
+*.uvoptx
+*.uvprojx
+
+# 编译生成的中间文件
+*.lst
+*.map
+*.o
+*.d
+*.crf
+
+# Keil 生成的输出文件
+*.axf
+*.hex
+*.bin
+*.sct
+*.lnp
+*.htm
+*.build_log.htm
+
+
+# settings.json是VS Code的配置文件,用于定义编辑器的各种设置.它可以存储与项目相关的定制化配置或用户全局设置
+
+
