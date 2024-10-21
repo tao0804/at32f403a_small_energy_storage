@@ -482,6 +482,11 @@
               <FileType>1</FileType>
               <FilePath>..\..\MyApp\password_encryption.c</FilePath>
             </File>
+            <File>
+              <FileName>my_led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\MyApp\my_led.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
