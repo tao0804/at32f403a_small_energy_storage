@@ -1,6 +1,4 @@
 #include "password_encryption.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 
 static const uint32_t crc32_tab[256] = /* 该Table由基于多项式 0x04C11DB7 生成 */
@@ -106,7 +104,7 @@ uint8_t bitMap[26] = {11,8,1,3,14,23,17,16,4,20,24,15,2,10,0,7,25,12,21,5,13,6,9
 uint32_t mapBits(uint32_t input, uint8_t reverse)
 {
     uint32_t mappedResult = 0;
-    for (int i = 0; i < sizeof(bitMap); i++) {
+    for (uint8_t i = 0; i < sizeof(bitMap); i++) {
         if (reverse) {
             if ((input >> i) & 1) mappedResult |= 1 << bitMap[i];
         } else {
@@ -135,7 +133,7 @@ int32_t decryptData(uint32_t encryptionKey, uint32_t ciphertext)
 }
 
 // 测试代码
-int main(int argc, char *argv[]) {
+uint8_t test_main(int argc, char *argv[]) {
     if (argc != 3) {
         printf("Usage: %s <testData> <deviceId>\n", argv[0]);
         return 1;
@@ -160,4 +158,5 @@ int main(int argc, char *argv[]) {
     printf("encryptionKey = %u\r\n", encryptionKey);
     printf("ciphertext = %08u\r\n", ciphertext);
     printf("plaintext = %d\r\n", plaintext);
+    return 1;
 }

@@ -324,7 +324,7 @@
             <wLevel>2</wLevel>
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
-            <uC99>0</uC99>
+            <uC99>1</uC99>
             <uGnu>0</uGnu>
             <useXO>0</useXO>
             <v6Lang>1</v6Lang>
@@ -476,6 +476,11 @@
               <FileName>my_key.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\MyApp\my_key.c</FilePath>
+            </File>
+            <File>
+              <FileName>password_encryption.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\MyApp\password_encryption.c</FilePath>
             </File>
           </Files>
         </Group>
